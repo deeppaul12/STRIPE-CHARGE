@@ -1,12 +1,11 @@
 from flask import Flask, request, jsonify
 import requests
 import re
-import random
-import string
+import threading
 
-#Niggasssssssssss
-BOT_TOKEN - '8777275794:AAEqF6d8P8LX-npJIRq2FmuNC2eRWU9WDY8'
-TELEGRAM_API_URL - t"https://api.telegram.org/bot{BOT_TOKEN}/edit
+BOT_TOKEN = "8777275794:AAEqF6d8P8LX-npJIRq2FmuNC2eRWU9WDY8"
+TELEGRAM_API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}"
+
 app = Flask(__name__)
 
 # The full_stripe_check and get_bin_info functions remain exactly the same as before.
